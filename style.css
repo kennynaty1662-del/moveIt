@@ -1,0 +1,307 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lavender
+}
+.scroll{
+    background: rgb(58, 58, 241);
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 900;
+    
+}
+.welcome{
+    display: flex;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text{
+    font-size: 10px;
+    font-weight: 900px;
+    color: white;
+    text-transform: uppercase;
+    animation-name: textMove;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    display: block;
+}
+
+@keyframes textMove {
+    0%{
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(1500px);
+    }
+}
+
+.navbar{
+    background: white;
+    top: 0%;
+    position: sticky;
+    padding: 10px 5px;
+    z-index: 1000;
+    text-decoration: none;
+
+}
+.nav-container{
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-menu{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+    gap: - 100px;
+    list-style: none;
+    gap: 40px;
+    
+}
+.my-image{
+    width: 20%;
+}
+
+.texted{
+    font-weight: 15px;
+    font-size: 15px;
+    line-height: -3px;
+    font-style: italic;
+
+}
+
+
+.engineering{
+    font-size: 20px;
+    font-style: normal;
+    display: inline-block;
+    color: red;
+    animation-name: engineering;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    
+}
+
+
+@keyframes engineering {
+    0%{
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+.eng {
+    color: black
+} 
+
+
+
+.nav-link{
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: lighter;
+    color: black;
+    gap: 2px;
+    font-style: normal;
+}
+.check-button{
+    border-radius: 10px;
+    background-color: grey;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.postcode-section{
+    border-radius:20px ;
+    color: grey;
+    padding: 0px;
+}
+.postcode-input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cont-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.cont-img h1 {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-shadow: 0px 5px 2px gray;
+}
+
+
+.fact-img {
+    height: 50%;
+    width: 50%;
+    animation-name: img-Resizer;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    /* animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both; */
+    
+}
+.get{
+    padding: 6px 15px;
+    background-color: rgb(19, 109, 212);
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.contact{
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: 10px;
+    color: black;
+    background-color: white;
+}
+.hero-button{
+    font-size: 20px;
+    gap: 30px;
+}
+
+
+/* 
+@keyframes img-Resizer {
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+} */
+ .why-us{
+    font-size:30px;
+    font-weight: 900px;
+    font-display: 30px;
+    margin: 0px 0px 0px 50px;
+ }
+
+ .prof{
+       display: grid;
+ }
+
+ .my-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin: 50px;
+ }
+ .why{
+    margin: 40px;
+ }
+
+
+ .my-hr{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0rem;
+    color: gray;
+    font-size: 14px;
+ }
+
+ .get-me{
+    padding:0px;
+    cursor: pointer;
+    background-color: none;
+    display: flex -me;
+    color: red;
+ }
+ 
+ .main-img{
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+    align-items: center;
+    margin: 60px;
+    margin-top: -20px;
+ }
+ 
+ .alaba{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+    margin: -30px 0px 0px 500px;
+    color:gray
+ }
+ .araba{
+    border: none;
+    height: 0px;
+    background-color: grey;
+ }
+
+ .jamie{
+    text-align: center;
+    color: grey;
+    margin-top: 25px;
+ }
+
+ .slap{
+    padding: 30px;
+    border-radius:100%;
+    align-items: end;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: -100px 0px 50px 1050px;
+    animation-name:slap;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    position: fixed;
+ }
+
+ @keyframes slap {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+ }
+
+
+ @media(max-width:768px){
+    
+  }
